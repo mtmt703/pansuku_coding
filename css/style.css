@@ -1,0 +1,382 @@
+/* common */
+html,
+body{
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  letter-spacing: 0;
+  color: #6E5542; 
+  line-height: 1.714;
+  
+}
+
+.mb_64{
+  margin-bottom: 64px;
+}
+
+/* SP */
+@media screen and (max-width:480px) {
+
+/* メインビジュアル */
+.mv{
+  width: 100%;
+  /* max-width: 375px; */
+  height: 100vh;
+  /* max-height: 667px; */
+  background: url(../images/img_mv.png) no-repeat center top;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.mv .mvBtn{
+  width: 375px;
+  height: 60px;
+  font-size: 16px;
+  background-color: #F4B833;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+}
+
+.mv .mvBtn a::after{
+  content: url( "../images/icon_arrow.png");
+  display: inline-block;
+  /* padding: 0 24px 0 50px; */
+  position: absolute;
+  top: 0;
+  right: 24px;
+}
+.mv .mvBtn a{
+  display: block;
+}
+
+.mv h1{
+  padding: 16px 0 14px 24px;
+}
+.mv h2{
+  text-align: center;
+}
+
+
+/* こんなお悩みありませんか */
+.problem{
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+  /* max-height: 232px; */
+  color: #42536E;
+  background: url(../images/problem_bg.png) no-repeat center top;
+  background-size: cover;
+  padding: 40px 40px 80px;
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.problem h2{
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.problem h2::after{
+  content: url( "../images/problem_icon.png");
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 34px;
+}
+
+.problem li{
+  font-size: 14px;
+}
+
+.problem li::before{
+  content: url( "../images/problem_checkBox.png");
+  display: inline-block;
+  padding: 0px 8px 8px 0;
+}
+
+.problem_messageBox,
+.media_messageBox,
+.price{
+  border: 1px solid #6E5542;
+  width: 87.46%;
+  margin:  0 auto 64px;
+  position: relative;
+  text-align: center;
+}
+
+.problem_messageBox h2,
+.media_messageBox h2{
+  font-size: 18px;
+  margin: -16px 0 24px;
+}
+.media_messageBox figure{
+  padding-bottom: 32px;
+}
+
+/* セクション内共通部分 */
+
+.bg_white{
+  background-color: #fff;
+  /* padding: 0 32px; */
+  padding: 30px 32px;
+}
+
+/* セクションタイトル周り */
+.main_ttl{
+  font-size: 21px;
+  text-align: center;
+  /* margin-bottom: 8px; */
+}
+.en_ttl{
+  display: block;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #F4B833;
+  text-align: center;
+  letter-spacing: 0.08em;
+  /* margin-bottom: 30px; */
+}
+.main_ttl::before{
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: #6E5542;
+  display: inline-block;
+  transform: rotate(-30deg);
+  margin: 0 16px -4px 0;
+}
+.main_ttl::after{
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: #6E5542;
+  display: inline-block;
+  transform: rotate(30deg);
+  margin: 0 0px -4px 16px;
+}
+/* セクションタイトル周りEND */
+
+/* セクション写真周り */
+.num_img,
+.sub_img{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sub_ttl{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.section_wrap{
+  padding: 30px 24px;
+}
+
+/* 偶数の背景色を変える */
+.section_wrap:nth-of-type(2n){
+  background-color: #FFF9ED;
+  /* margin: 0 0px 32px; */
+}
+/* セクション写真周りEND */
+
+
+.fukidashi{
+  background-color: #FFF9ED;
+  position: relative;
+  padding: 22px 24px;
+  border-radius: 5px;
+  line-height: 1.714;
+  margin-bottom: 16px;
+}
+
+.fukidashi::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 8px 0 8px;
+  border-color: #FFF9ED transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.fukidashi p{
+  margin-bottom: 16px;
+}
+.fukidashi span{
+  display: block;
+  text-align: right;
+}
+
+.shop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+.shopTitle{
+  font-size: 13px;
+  margin-bottom: 8px;
+  position: relative;
+  background-color: #fff;
+}
+.shopName{
+  font-size: 12px;
+}
+
+.shopTitle::before{
+  content: '';
+  width: 25%;
+  height: 1px;
+  display: block;
+  background-color: #6E5542;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+
+}
+
+/* 料金セクション */
+.price .main_ttl{
+  margin: -20px 0px 0px;
+  background-color: #fff;
+}
+
+.price .en_ttl,
+.faq .en_ttl{
+  margin-bottom: 24px;
+}
+
+.price_wrap{
+  padding: 0 20%;
+}
+
+.price figure{
+  padding-bottom: 24px;
+}
+
+/* よくある質問 セクション*/
+
+.accordion dl{
+  margin-bottom: 16px;
+  position: relative;
+}
+.accordion dt{
+  width: 100%;
+  height: 50px;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+  background-color: #FFF9ED;
+  line-height: 50px;
+  margin-bottom: 14px;
+  font-size: 14px;
+
+  /* .accordion dt::afterの親要素のため */
+  position: relative;
+}
+
+.accordion dd{
+  font-size: 13px;
+  line-height: 1.615;
+  padding-left: 24px;
+  margin-bottom: 32px;
+  display: none;
+
+}
+
+.accordion span{
+  font-size: 18px;
+  color: #F4B833;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0 10px 0 24px;
+}
+
+/* 2本の横線を作成 */
+.accordion dt::after,
+.accordion dt::before{
+  content: '';
+  width: 15px;
+  height: 2px;
+  display: block;
+  position: absolute;
+    top: 50%;
+    right: 24px;
+  transform: translateY(-50%);
+  background: #F4B833;
+}
+
+/* 2本のうち1本は縦棒にする */
+.accordion dt::after{
+  /* 横棒を縦にするために90度回転させる */
+  transform: translateY(-50%) rotate(90deg);
+  transition: .3s;
+}
+
+/* プラスがクリックされたら縦棒を外してマイナスにする */
+.accordion dt.selected::after{
+  transform: rotate(0);
+  transition: .3s;
+}
+
+
+/* クロージング周り */
+.btn_cta{
+  width: 270px;
+  height: 50px;
+  font-size: 16px;
+  background-color: #F4B833;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  margin: 24px auto 32px;
+  position: relative;
+}
+
+.btn_cta a::after{
+  content: url( "../images/icon_arrow.png");
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 24px;
+}
+.btn_cta a{
+  display: block;
+}
+
+
+
+
+
+
+/* footer */
+footer{
+  text-align: center;
+  position: relative;
+}
+
+small{
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn_pageTop{
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  bottom: 0;
+
+}
+
+
+}

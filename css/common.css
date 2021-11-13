@@ -1,0 +1,91 @@
+/*===================
+  regulation
+===================*/
+body {
+  min-width: 320px;
+}
+body,
+body a {
+  font-family: 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic',  sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.714;
+  letter-spacing: 0;
+  color: #6E5542;
+}
+figure img {
+  width: 100%;
+  height: auto;
+}
+section {
+  padding: 40px 0;
+}
+.container {
+  width: 87.2%;
+  margin: 0 auto;
+}
+/* .msgBox */
+.msgBox {
+  border: 1px solid #6E5542;
+  position: relative;
+  padding: 37px 15px 7px;
+}
+.msgBox .head {
+  text-align: center;
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.msgBox .head > span {
+  font-size: 18px;
+  letter-spacing: 0.100em;
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 27px;
+}
+.msgBox .head > span img {
+  height: 25px;
+}
+.msgBox .head > span .diagLine span {
+  display: block;
+}
+/* .diagLine */
+.diagLine {
+  font-size: 21px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+.diagLine span {
+  display: block;
+}
+.diagLine .inner {
+  display: inline-block;
+  position: relative;
+}
+.diagLine .inner::before,
+.diagLine .inner::after {
+  content: '';
+  width: 1px;
+  height: 24px;
+  background-color: #6E5542;
+  display: block;
+  position: absolute;
+  top: 7px;
+  margin: auto;
+}
+.diagLine .inner::before {
+  left: -30px;
+  right: auto;
+  transform: rotate(-30deg);
+}
+.diagLine .inner::after {
+  left: auto;
+  right: -30px;
+  transform: rotate(30deg);
+}
+.diagLine .en {
+  font-size: 10px;
+  color: #F4B833;
+}
